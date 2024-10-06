@@ -13,11 +13,10 @@ import Link from "next/link";
 import React from "react";
 import { SidebarLink } from "./SidebarLink";
 
-
 const sidebarLinks = [
   {
     icon: Home,
-    href: "/home",
+    href: "/",
     label: "Home",
   },
   {
