@@ -1,12 +1,26 @@
-import MapQuestions from "@/components/listening/MapQuestions";
-import React from "react";
+import { TestSections } from "@/components/shared/TestSections";
 
-const ListeningMapSectionPage = () => {
-  return (
-    <div className="max-w-5xl mx-auto h-full p-6 pl-8">
-      <MapQuestions />
-    </div>
-  );
+export const tests = [
+  {
+    id: "1",
+    name: "Test 1",
+  },
+  {
+    id: "2",
+    name: "Test 2",
+  },
+  {
+    id: "3",
+    name: "Test 3",
+  },
+  {
+    id: "4",
+    name: "Test 4",
+  },
+];
+
+const ListenigMapQuestionsPage = () => {
+  return <TestSections tests={tests} testSection="map" testType="listening" />;
 };
 
-export default ListeningMapSectionPage;
+export default ListenigMapQuestionsPage;

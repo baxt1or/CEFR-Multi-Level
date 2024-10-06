@@ -1,11 +1,27 @@
-import ExtractQuestions from "@/components/listening/ExtractQuestions";
-import React from "react";
+import { TestSections } from "@/components/shared/TestSections";
+
+export const tests = [
+  {
+    id: "1",
+    name: "Test 1",
+  },
+  {
+    id: "2",
+    name: "Test 2",
+  },
+  {
+    id: "3",
+    name: "Test 3",
+  },
+  {
+    id: "4",
+    name: "Test 4",
+  },
+];
 
 const ListeningExtractSectionPage = () => {
   return (
-    <div className="max-w-5xl mx-auto h-full p-6 pl-8">
-      <ExtractQuestions />
-    </div>
+    <TestSections tests={tests} testSection="extract" testType="listening" />
   );
 };
 

@@ -1,12 +1,32 @@
-import MatchingQuestions from "@/components/listening/MatchingQuestions";
-import React from "react";
+import { TestSections } from "@/components/shared/TestSections";
 
-const ListeningSpeakerMatchingPage = () => {
+export const tests = [
+  {
+    id: "1",
+    name: "Test 1",
+  },
+  {
+    id: "2",
+    name: "Test 2",
+  },
+  {
+    id: "3",
+    name: "Test 3",
+  },
+  {
+    id: "4",
+    name: "Test 4",
+  },
+];
+
+const ListeningMatchinQuestionPage = () => {
   return (
-    <div className="max-w-5xl mx-auto h-full p-6 pl-8">
-      <MatchingQuestions />
-    </div>
+    <TestSections
+      tests={tests}
+      testSection="speaker-matching"
+      testType="listening"
+    />
   );
 };
 
-export default ListeningSpeakerMatchingPage;
+export default ListeningMatchinQuestionPage;

@@ -1,12 +1,26 @@
-import MCQuestions from "@/components/listening/MCQuestions";
-import React from "react";
+import { TestSections } from "@/components/shared/TestSections";
 
-const ListeningMCQSectionPage = () => {
-  return (
-    <div className="max-w-5xl mx-auto h-full p-6 pl-8">
-      <MCQuestions />
-    </div>
-  );
+export const tests = [
+  {
+    id: "1",
+    name: "Test 1",
+  },
+  {
+    id: "2",
+    name: "Test 2",
+  },
+  {
+    id: "3",
+    name: "Test 3",
+  },
+  {
+    id: "4",
+    name: "Test 4",
+  },
+];
+
+const ListenigMCQSetionsQuestionsPage = () => {
+  return <TestSections tests={tests} testSection="mcq" testType="listening" />;
 };
 
-export default ListeningMCQSectionPage;
+export default ListenigMCQSetionsQuestionsPage;

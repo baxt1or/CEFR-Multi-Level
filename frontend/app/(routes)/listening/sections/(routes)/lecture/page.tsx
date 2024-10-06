@@ -1,12 +1,28 @@
-import LectureQuestions from "@/components/listening/LectureQuestions";
-import React from "react";
+import { TestSections } from "@/components/shared/TestSections";
 
-const ListeningLectureSectionPage = () => {
+export const tests = [
+  {
+    id: "1",
+    name: "Test 1",
+  },
+  {
+    id: "2",
+    name: "Test 2",
+  },
+  {
+    id: "3",
+    name: "Test 3",
+  },
+  {
+    id: "4",
+    name: "Test 4",
+  },
+];
+
+const ListenigLectureQuestionsPage = () => {
   return (
-    <div className="max-w-5xl mx-auto h-full p-6 pl-8">
-      <LectureQuestions />
-    </div>
+    <TestSections tests={tests} testSection="lecture" testType="listening" />
   );
 };
 
-export default ListeningLectureSectionPage;
+export default ListenigLectureQuestionsPage;

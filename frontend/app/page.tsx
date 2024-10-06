@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-y-4 items-center justify-center mt-16 max-w-4xl mx-auto h-full w-full">
+    <div className="flex flex-col gap-y-4 items-center justify-center mt-16 max-w-4xl mx-auto h-full w-full pt-12">
       <h1 className="text-8xl font-bold text-center">
         Ace Your Language Exams
       </h1>
